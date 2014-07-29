@@ -15,7 +15,7 @@ generated. A wide range of possible output files are available.
 
 ## PROJECTS
 
-* **FastPass Exchange** (Group project), *Tech Lead*:
+* [**FastPass Exchange**](https://github.com/fastpassexchange/fastpass) (Group project), *Tech Lead*
 
   FastPass Exchange gives Disneyland visitors the power to go on all the rides
   they want, when they want.
@@ -24,7 +24,7 @@ generated. A wide range of possible output files are available.
   * fixed multiple bugs and enhanced Firebase integration using AngularFire
   * significantly enhanced UI and UX
 
-* **Trrnts** (Group Project), *Product Owner, Tech Lead*:
+* [**Trrnts**](https://github.com/Trrnts/Trrnts) (Group Project), *Product Owner, Tech Lead*
 
   Trrnts is the front page for the BitTorrent network, providing insights
   through interactive analytics and data visualizations that leverage the DHT
@@ -40,7 +40,7 @@ generated. A wide range of possible output files are available.
     memory-efficient code inspired by functional programming style scraped
     popular BitTorrent torrenting sites in order to bootstrap web app
 
-* **Trrnts** (Hackathon Project):
+* [**Trrnts**](https://github.com/alexanderGugel/trrnts-hackathon) (Hackathon Project)
 
   Trrnts originally was a Proof of Concept that demonstrated the crawlability of
   the Mainline BitTorrent DHT network in order to monitor the popularity of
@@ -56,7 +56,7 @@ generated. A wide range of possible output files are available.
   * organized and led team to continue working on the prototype
 
 
-* **Odin** (Learning Experience):
+* [**Odin**](https://github.com/alexanderGugel/Odin) (Learning Experience)
 
   Odin is a foolproof text-based multi-room chat application inspired by the
   popular IRC protocol.
@@ -66,14 +66,14 @@ generated. A wide range of possible output files are available.
   * posted on Hacker News
 
 
-* **Penetration Testing**  (Learning Experience):
+* **Penetration Testing**  (Learning Experience)
 
   Found security flaws in two major banking websites.
 
   * analyzed banking websites for security vulnerabilities
   * accidentally discovered XSS open redirect vulnerabilities
 
-* **Meatr** (Learning Experience):
+* **Meatr** (Learning Experience)
 
   Meatr is a social network for German students.
 
@@ -87,18 +87,14 @@ development.
 
 ## SKILLS
 
-* **Strong**:
-
-  Backbone.JS, JavaScript, Node.JS, Redis, Express, Socket.IO, SQL,
+* **Strong**: Backbone.JS, JavaScript, Node.JS, Redis, Express, Socket.IO, SQL,
   CoffeeScript, CSS, TDD, Git, Grunt, Gulp, Azure
 
-* **Knowledgable**:
+* **Knowledgable**: D3.js, Ionic, MongoDB, Ruby, Sinatra, Java, AngularJS,
+  MongoDB, Connect
 
-  D3.js, Ionic, MongoDB, Ruby, Sinatra, Java, AngularJS, MongoDB, Connect
-
-* **Basic**:
-
-  Cordova, PHP, LevelDB, MQL4, Lisp, RethinkDB, PostgreSQL, Penetration Testing
+* **Basic**: Cordova, PHP, LevelDB, MQL4, Lisp, RethinkDB, PostgreSQL,
+  Penetration Testing
 
 ## BUGS
 
