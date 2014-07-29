@@ -1,5 +1,5 @@
 gugel(1) -- convert pizza & Mountain Dew into rock-solid (web) apps
-================================================================
+===================================================================
 
 ## DESCRIPTION
 
@@ -85,6 +85,21 @@ Please note: The projects are sorted in reverse chronological order. They do not
 necessarily reflect my badassery, but rather my personal and professional
 development.
 
+## SKILLS
+
+* **Strong**:
+
+  Backbone.JS, JavaScript, Node.JS, Redis, Express, Socket.IO, SQL,
+  CoffeeScript, CSS, TDD, Git, Grunt, Gulp, Azure
+
+* **Knowledgable**:
+
+  D3.js, Ionic, MongoDB, Ruby, Sinatra, Java, AngularJS, MongoDB, Connect
+
+* **Basic**:
+
+  Cordova, PHP, LevelDB, MQL4, Lisp, RethinkDB, PostgreSQL, Penetration Testing
+
 ## BUGS
 
 `Alexander Gugel` is written in Node.JS and depends on <pizza> and
@@ -97,4 +112,9 @@ gugel is Copyright (C) 2014 Alexander Gugel <alexander.gugel@gmail.com>
 
 ## SEE ALSO
 
-groff(1), man(1), pandoc(1), manpages(5), markdown(7), roff(7), ronn-format(7)
+[GitHub](https://github.com/alexanderGugel)
+[LinkedIn](https://www.linkedin.com/in/alexandergugel)
+[Twitter](https://twitter.com/alexanderGugel)
+[Svbtle](http://alexandergugel.svbtle.com/)
+[Facebook](https://www.facebook.com/agugel)
+<alexander.gugel@gmail.com>
