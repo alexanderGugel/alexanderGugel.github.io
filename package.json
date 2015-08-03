@@ -1,0 +1,27 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "st": "^0.5.5",
+    "stylus": "^0.52.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "stylus -w --include-css index.styl -o index.css & st -nc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderGugel/alexanderGugel.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexanderGugel/alexanderGugel.github.io/issues"
+  },
+  "homepage": "https://github.com/alexanderGugel/alexanderGugel.github.io#readme",
+  "dependencies": {
+    "normalize.css": "^3.0.3"
+  }
+}

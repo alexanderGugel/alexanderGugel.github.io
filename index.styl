@@ -1,0 +1,61 @@
+@require './node_modules/normalize.css/normalize.css'
+
+html
+  font: normal 400 14px/1.5 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif
+  background: #eee
+  box-sizing: border-box
+
+*, *:before, *:after
+  box-sizing: inherit
+
+body
+  padding: 0.25em
+
+address
+  padding: 0.5em
+  background: #fff
+  border-radius: 2px
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  font-style: normal
+  img
+    width: 100%
+    border-radius: 5px
+    display: block
+  span
+    display: inline-block
+    padding: 0.125em 0
+    margin: 0.125em 0
+  span, a
+    color: #444
+  a
+    text-decoration: none
+  .material-icons
+    font-size: 1em
+    position: relative
+    top: 2px
+  .full-name
+    color: #333
+    font-weight: 700
+    font-size: 1.75em
+    border-bottom: 2px solid #eee
+  .email
+    display: block
+  p
+    a
+      border-bottom: 1px solid #eee
+  :last-child
+    margin-bottom: 0
+  .twitter
+    color: #4099FF
+  .github
+    background: #171515
+    color: #fff
+
+@media screen and (min-width: 24em)
+  address
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    width: 24em
+    max-width: 100%
