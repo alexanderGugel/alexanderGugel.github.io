@@ -5,11 +5,12 @@
   "main": "index.js",
   "devDependencies": {
     "st": "^0.5.5",
-    "stylus": "^0.52.0"
+    "stylus": "^0.52.0",
+    "watchify": "^3.3.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "stylus -w --include-css index.styl -o index.css & st -nc"
+    "dev": "stylus -w --include-css index.styl -o index.css & watchify index.js -d -v -o bundle.js & st -nc"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,15 @@
   },
   "homepage": "https://github.com/alexanderGugel/alexanderGugel.github.io#readme",
   "dependencies": {
-    "normalize.css": "^3.0.3"
+    "babelify": "^6.1.3",
+    "canvas-fit": "^1.4.0",
+    "lodash.throttle": "^3.0.4",
+    "normalize.css": "^3.0.3",
+    "raf-loop": "^1.1.3"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   }
 }
