@@ -19,7 +19,6 @@ export default class Game {
     this.canvas = context.canvas
     this.cellSize = options.cellSize || 15
     this.initialLength = options.initialLength || 10
-    this.diff = null
     this.reset()
   }
   reset () {
@@ -42,11 +41,14 @@ export default class Game {
   get maxY () {
     return ~~(this.canvas.height / this.cellSize)
   }
+  get score () {
+    return this.snake.length - this.initialLength
+  }
   step (diff) {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
 
-    var nx = this.snake[0].x
-    var ny = this.snake[0].y
+    let nx = this.snake[0].x
+    let ny = this.snake[0].y
 
     switch (this.direction) {
       case DIRECTIONS.RIGHT:
@@ -66,11 +68,10 @@ export default class Game {
       return this.reset()
     }
 
-    var tail
+    let tail
 
     if (nx === this.food.x && ny === this.food.y) {
       tail = {x: nx, y: ny}
-      this.score++
       this.food = this.createFood()
     } else {
       tail = this.snake.pop()
@@ -82,9 +83,6 @@ export default class Game {
 
     this.paintSnake()
     this.paintFood()
-
-    var score_text = 'Score: ' + (this.snake.length - this.initialLength)
-    this.context.fillText(score_text, 5, this.canvas.height - 5)
   }
   paintSnake (x, y) {
     this.snake.forEach(cell => {
@@ -97,7 +95,7 @@ export default class Game {
     this.context.fillRect(this.food.x * this.cellSize, this.food.y * this.cellSize, this.cellSize, this.cellSize)
   }
   checkCollision (x, y, array) {
-    for (var i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
       if (array[i].x === x && array[i].y === y) return true
     }
     return false
