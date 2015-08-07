@@ -13,8 +13,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "stylus -w --include-css index.styl -o bundle.css & watchify index.js -d -v -o bundle.js & st -nc",
-    "build": "stylus --include-css index.styl -o bundle.css && browserify index.js | uglifyjs -c > bundle.js"
+    "dev": "stylus -w --include-css styl/index.styl -o dist/bundle.css & watchify js/index.js -d -v -o dist/bundle.js & st -nc",
+    "build": "stylus --include-css styl/index.styl -o dist/bundle.css && browserify js/index.js | uglifyjs -c > dist/bundle.js"
   },
   "repository": {
     "type": "git",
