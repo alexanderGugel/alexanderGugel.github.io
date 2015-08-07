@@ -14,8 +14,10 @@ if (!isTouchDevice) {
 
   loop(throttle(() => game.step(), (1 / 0.06) * 2)).start()
 
-  window.addEventListener('resize', fit(canvas), false)
-  window.addEventListener('resize', () => game.reset(), false)
+  let resize = fit(canvas)
+  resize.scale = window.devicePixelRatio || 1
+  resize()
 
+  window.addEventListener('resize', resize, false)
   document.addEventListener('keydown', (e) => game.onKeydown(e))
 }

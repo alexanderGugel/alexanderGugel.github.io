@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "devDependencies": {
     "babelify": "^6.1.3",
     "browserify": "^11.0.1",

@@ -17,7 +17,7 @@ export default class Game {
     options = options || {}
     this.context = context
     this.canvas = context.canvas
-    this.cellSize = options.cellSize || 15
+    this.cellSize = options.cellSize || 30
     this.initialLength = options.initialLength || 10
     this.reset()
   }
@@ -44,7 +44,10 @@ export default class Game {
   get score () {
     return this.snake.length - this.initialLength
   }
-  step (diff) {
+  step () {
+    if (this.food.x > this.maxX) this.food.x = this.maxX
+    if (this.food.y > this.maxX) this.food.y = this.maxX
+
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
 
     let nx = this.snake[0].x
