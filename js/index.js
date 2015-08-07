@@ -1,7 +1,6 @@
 import Game from './Game'
 import fit from 'canvas-fit'
 import loop from 'raf-loop'
-import throttle from 'lodash.throttle'
 
 var isTouchDevice = 'ontouchstart' in document.documentElement
 
@@ -19,5 +18,8 @@ if (!isTouchDevice) {
   document.addEventListener('keydown', (e) => game.onKeydown(e))
 
   let game = new Game(context)
-  loop(throttle(() => game.step(), (1 / 0.06) * 2)).start()
+  let frame = 0
+  loop(() => {
+    if (!(frame++ % 2)) game.step()
+  }).start()
 }
