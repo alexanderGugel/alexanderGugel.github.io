@@ -28,12 +28,12 @@ export default class Game {
   }
   createFood () {
     return {
-      x: ~~(Math.random() * (this.canvas.width - this.cellSize) / this.cellSize),
-      y: ~~(Math.random() * (this.canvas.height - this.cellSize) / this.cellSize)
+      x: ~~(Math.random() * this.maxX),
+      y: ~~(Math.random() * this.maxY)
     }
   }
   createSnake () {
-    return Array.apply(null, Array(this.initialLength)).map((_, i) => { return { x: i, y: 0 }}).reverse()
+    return Array.apply(null, Array(this.initialLength)).map((_, i) => { return { x: i, y: 10 }}).reverse()
   }
   get maxX () {
     return ~~(this.canvas.width / this.cellSize)
