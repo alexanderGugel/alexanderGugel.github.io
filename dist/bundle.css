@@ -7,9 +7,12 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /**
@@ -55,8 +58,10 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
 }
 
 /**
@@ -254,9 +259,12 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  margin: 0; /* 3 */
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
 }
 
 /**
@@ -288,11 +296,13 @@ select {
  */
 
 button,
-html input[type="button"], /* 1 */
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
 }
 
 /**
@@ -333,8 +343,10 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -354,8 +366,10 @@ input[type="number"]::-webkit-outer-spin-button {
  */
 
 input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  box-sizing: content-box; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
 }
 
 /**
@@ -385,8 +399,10 @@ fieldset {
  */
 
 legend {
-  border: 0; /* 1 */
-  padding: 0; /* 2 */
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -429,14 +445,17 @@ html {
   box-sizing: border-box;
   color: #333;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 #game {
   pointer-events: none;
 }
+
 address {
   margin: 0.25em;
   padding: 0.5em;
@@ -445,55 +464,69 @@ address {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   font-style: normal;
 }
+
 address img {
   width: 100%;
   border-radius: 5px;
   display: block;
 }
+
 address span {
   display: inline-block;
   padding: 0.125em 0;
   margin: 0.125em 0;
 }
+
 address span,
 address a {
   color: #777;
 }
+
 address a {
   text-decoration: none;
 }
+
 address .material-icons {
   font-size: 1em;
   position: relative;
   top: 2px;
 }
+
 address .full-name {
   color: #333;
   font-weight: 700;
   font-size: 1.75em;
   border-bottom: 2px solid #eee;
 }
+
 address .email {
   display: block;
 }
+
 address p a {
   border-bottom: 1px solid #ddd;
   color: #333;
 }
+
 address :last-child {
   margin-bottom: 0;
 }
+
 address .twitter {
   border-bottom: 1px solid #4099ff;
 }
+
 address .github {
   border-bottom: 1px solid #171515;
 }
+
 @media screen and (min-width: 24em) {
   address {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
     width: 24em;
     max-width: 100%;
