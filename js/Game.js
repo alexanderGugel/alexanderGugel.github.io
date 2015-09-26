@@ -33,7 +33,7 @@ export default class Game {
     }
   }
   createSnake () {
-    return Array.apply(null, Array(this.initialLength)).map((_, i) => { return { x: i, y: 10 }}).reverse()
+    return Array.apply(null, Array(this.initialLength)).map((_, i) => { return { x: i, y: 10 } }).reverse()
   }
   get maxX () {
     return ~~(this.canvas.width / this.cellSize)
