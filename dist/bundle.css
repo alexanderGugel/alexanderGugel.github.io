@@ -520,7 +520,7 @@ address .github {
   border-bottom: 1px solid #171515;
 }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 30em) {
   address {
     position: absolute;
     top: 50%;
@@ -528,7 +528,7 @@ address .github {
     -webkit-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
-    width: 24em;
+    width: 30em;
     max-width: 100%;
   }
 }
